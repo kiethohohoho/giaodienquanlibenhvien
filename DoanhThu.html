@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bác Sĩ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/DoanhThu.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <header>
+            <div class="hd-item" onclick="option1()"><a>Nhập viện</a></div>
+            <div class="hd-item" onclick="option2()"><a>Xuất viện</a></div>
+        </header>
+        <div class="show-info">
+            <div id="ho-so-benh-an" class="flex-display" style="display: flex;">
+                <h1>Form nhập viện</h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Thông tin tiếp nhận</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mã bệnh nhân</td>
+                                <td><input spellcheck="false" type="text" value="bn0017"></td>
+                            </tr>
+                            <tr>
+                                <td>Họ tên</td>
+                                <td><input spellcheck="false" type="text" value="Võ Thị Bích"></td>
+                            </tr>
+                            <tr>
+                                <td>Số BHYT</td>
+                                <td><input spellcheck="false" type="text" value="BH012456"></td>
+                            </tr>
+                            <tr>
+                                <td>Số CMND</td>
+                                <td><input spellcheck="false" type="text" value="2015xxxxx"></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày nhập viện</td>
+                                <td><input spellcheck="false" type="date"></td>
+                            </tr>
+                            <tr>
+                                <td>Lý do nhập viện</td>
+                                <td><input type="text" value="Tai nạn giao thông"></td>
+                            </tr>
+                            <tr>
+                                <td>Tình trạng</td>
+                                <td><input type="text" value="Hấp hối"></td>
+                            </tr>
+                            <tr>
+                                <td>Khoa</td>
+                                <td>
+                                    <select>
+                                        <option>Khoa Nhi</option>
+                                        <option>Khoa Thần Kinh</option>
+                                        <option>Khoa Sản</option>
+                                        <option>Khoa Tai Mũi Họng</option>
+                                        <option>Khoa Nội</option>
+                                        <option>Khoa Ngoại</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Phòng</td>
+                                <td>
+                                    <select>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Số tiền tạm thu</td>
+                                <td><input spellcheck="false" type="text" value="500.000 ₫"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ipt">
+                    <button onclick="redirect('ThanhToanNhapVien.html')">
+                        <i style="font-size: 19px;" class="fas fa-comment-dollar"></i>Thanh toán
+                    </button>
+                    <button onclick="redirect('/')">
+                        <i class="fas fa-sign-out-alt"></i>THOÁT
+                    </button>
+                </div>
+            </div>
+
+            <div id="ke-don-thuoc" class="flex-display" style="display: none;">
+                <h1>Form xuất viện</h1>
+                <div class="ipt">
+                    <input type="text" class="ipt-benhnhan" placeholder="Nhập CMND" checked="false">
+                    <button class="ipt-benhnhan">Tìm</button>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Thông tin tiếp nhận</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mã bệnh nhân</td>
+                                <td><p>bn0017</p></td>
+                            </tr>
+                            <tr>
+                                <td>Số CMND</td>
+                                <td><p>2015xxxxx</p></td>
+                            </tr>
+                            <tr>
+                                <td>Số BHYT</td>
+                                <td><p>BH012456</p></td>
+                            </tr>
+                            <tr>
+                                <td>Họ tên</td>
+                                <td><p>Võ Thị Bích</p></td>
+                            </tr>
+                            <tr>
+                                <td>Khoa</td>
+                                <td><p>Khoa Nhi</p></td>
+                            </tr>
+                            <tr>
+                                <td>Phòng</td>
+                                <td><p>1</p></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày nhập viện</td>
+                                <td><p>1/1/2019</p></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày xuất viện</td>
+                                <td><p>1/1/2021</p></td>
+                            </tr>
+                            <tr>
+                                <td>Số tiền tổng thu</td>
+                                <td><p>1.000.000 ₫</p></td>
+                            </tr>
+                            <tr>
+                                <td>Số tiền tạm thu</td>
+                                <td><p>500.000 ₫</p></td>
+                            </tr>
+                            <tr>
+                                <td>Công nợ</td>
+                                <td><p>500.000 ₫</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ipt">
+                    <button onclick="redirect('ThanhToanXuatVien.html')">
+                        <i style="font-size: 19px;" class="fas fa-comment-dollar"></i>Thanh toán
+                    </button>
+                    <button onclick="redirect('/')">
+                        <i class="fas fa-sign-out-alt"></i>THOÁT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+        let __option1 = document.getElementById("ho-so-benh-an")
+        let __option2 = document.getElementById("ke-don-thuoc")
+        let hd = document.getElementsByClassName('hd-item');
+        function option1() {
+            hd[0].style.backgroundColor = 'purple';
+            hd[1].style.backgroundColor = 'rgb(7, 144, 179)';
+            __option1 ? __option1.style.display = 'flex' : '';
+            __option2 ? __option2.style.display = 'none' : '';
+        }
+        function option2() {
+            hd[1].style.backgroundColor = 'purple';
+            hd[0].style.backgroundColor = 'rgb(7, 144, 179)';
+            __option1 ? __option1.style.display = 'none' : '';
+            __option2 ? __option2.style.display = 'flex' : '';
+        }
+    </script>
+</body>
+
+</html>

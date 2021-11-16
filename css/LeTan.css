@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.box {
+  width: 85%;
+  height: 100%;
+  background-image: url(../HinhAnh/61802.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+.dong {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+  z-index: 10;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+.hd-item {
+  font-size: 16px;
+  background-color: rgb(7, 144, 179);
+  cursor: pointer;
+  height: 33px;
+}
+.hd-item:first-child {
+  background-color: purple;
+}
+.hd-item a {
+  color: white;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.content {
+  margin-top: 20px;
+}
+.ipt {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.ipt button,
+.ipt input {
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.table-display {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid white;
+  text-align: center;
+  padding: 8.5px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+th {
+  background: #eee;
+}
+td i {
+  font-size: 25px;
+  cursor: pointer;
+}
+td.relative {
+  position: relative;
+}
+.toggle-table {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 400%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.togle-active + .toggle-table {
+  opacity: 1;
+  visibility: visible;
+}
+.toggle-table th {
+  background-color: rgb(205, 195, 50);
+}
+.toggle-table i {
+  font-size: 25px;
+  color: green;
+}
+.toggle-table i.fa-times-circle {
+  color: red;
+}
+footer,
+.ft {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 30px;
+}
+.ft {
+  left: 20px;
+  bottom: 100px;
+}

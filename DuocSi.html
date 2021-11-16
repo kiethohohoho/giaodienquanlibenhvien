@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dược Sĩ</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="css/KhoThuoc.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/BacSi.css">
+
+</head>
+<style>
+    input {
+        color: black;
+        width: 80px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    .box {
+        background-image: url(../HinhAnh/61803.jpg);
+    }
+
+    .option {
+        background-color: #40d9d3;
+        color: #fff;
+    }
+
+    #option-noti {
+        color: #ffe3b9;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <div class="filter">
+            <div class="filter-item1">
+                <img src="./HinhAnh/duocsi.png" alt="">
+            </div>
+            <div class="filter-item2">
+                <div class="fb-40">
+                    <span>Dược Sĩ:</span>
+                    <span>lê tấn kiệt</span>
+                </div>
+                <div class="fb-40">
+                    <span>giới tính:</span>
+                    <span>nam</span>
+                </div>
+            </div>
+        </div>
+        <div class="list-options">
+            <div class="option" onclick="option1()">Kê Toa</div>
+            <div class="option" onclick="option2()">Lấy Thuốc Theo Toa</div>
+            <div class="option" onclick="option3()">Quản Lý Kho Thuốc</div>
+        </div>
+        <div class="show-info">
+            <h3 id="option-noti">
+                hãy chọn 1 tác vụ để làm việc
+            </h3>
+            <div id="xem-don-thuoc" class="flex-display" style="display: none;">
+                <h1 style="position: relative;">Kê Toa
+                    <button style="position: absolute; right: 0;">Xác nhận kê toa</button>
+                </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã thuốc</th>
+                            <th>Tên</th>
+                            <th>Đơn vị tính</th>
+                            <th>Số lượng</th>
+                            <th>Giá bán (VND)</th>
+                            <th>Nhóm thuốc</th>
+                            <th>Thêm thuốc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="111"></td>
+                            <td><input type="text" value="Sủi"></td>
+                            <td><input type="text" value="Hộp"></td>
+                            <td><input type="text" value="50"></td>
+                            <td><input type="text" value="15.000"></td>
+                            <td><input type="text" value="Vỉtamin"></td>
+                            <td><button><i style="margin-right: 5px;" class="fas fa-plus-circle"></i>Thêm</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="stt">STT</th>
+                                <th>Mã thuốc</th>
+                                <th att="nam">Tên</th>
+                                <th att="ten">Đơn vị tính </th>
+                                <th>Số lượng</th>
+                                <th>Giá bán (VND)</th>
+                                <th>Nhóm thuốc</th>
+                                <th>Xóa</th>
+                                <th>Sửa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>9541</td>
+                                <td>Panadol</td>
+                                <td>Viên</td>
+                                <td>1000</td>
+                                <td>2.000</td>
+                                <td>Kháng sinh</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>9534</td>
+                                <td>Que test đường</td>
+                                <td>Lọ</td>
+                                <td>50</td>
+                                <td>22.000</td>
+                                <td>Vật tư y tế</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>9550</td>
+                                <td>Panadol</td>
+                                <td>Viên</td>
+                                <td>1000</td>
+                                <td>2.000</td>
+                                <td>Kháng sinh</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>9570</td>
+                                <td>Que test đường</td>
+                                <td>Lọ</td>
+                                <td>50</td>
+                                <td>22.000</td>
+                                <td>Vật tư y tế</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="chi-tiet-don-thuoc" class="flex-display" style="display: none;">
+                <h1>Lấy Thuốc Theo Toa</h1>
+                <div>
+                    <label style="display: inline; color: initial; font-size: 20px;padding: 10px;">Nhập Mã Đơn
+                        Thuốc</label>
+                    <input type="text" class="ipt-kedonthuoc">
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="ten">Họ Và Tên</th>
+                                <th att="nam">Mã Đơn Thuốc</th>
+                                <th>Đơn Thuốc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lê Tấn Kiệt</td>
+                                <td>A007</td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th att="ten">Tên Thuốc</th>
+                                                <th att="stt">Số Lượng</th>
+                                                <th>Ghi Chú</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Alteplase</td>
+                                                <td>8</td>
+                                                <td>Uống sáng, chiều sau khi ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Penumbra</td>
+                                                <td>4</td>
+                                                <td>Uống sáng sau khi ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Merci</td>
+                                                <td>4</td>
+                                                <td>Uống sáng sau khi ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Solitaire</td>
+                                                <td>8</td>
+                                                <td>Uống sáng, chiều sau khi ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hoạt Huyết Dưỡng Não</td>
+                                                <td>1 hộp</td>
+                                                <td>Thuốc bổ kèm theo, uống sáng chiều sau khi ăn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C sủi</td>
+                                                <td>1 lọ</td>
+                                                <td>Ngày uống 3 lần trước hoặc sau khi ăn</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="quan-li-kho-thuoc" class="flex-display" style="display: none;">
+                <h1>Quản lý kho thuốc</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã thuốc</th>
+                            <th>Tên</th>
+                            <th>Đơn vị tính</th>
+                            <th>Số lượng</th>
+                            <th>Giá bán (VND)</th>
+                            <th>Nhóm thuốc</th>
+                            <th>Thêm thuốc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="111"></td>
+                            <td><input type="text" value="Sủi"></td>
+                            <td><input type="text" value="Hộp"></td>
+                            <td><input type="text" value="50"></td>
+                            <td><input type="text" value="15.000"></td>
+                            <td><input type="text" value="Vỉtamin"></td>
+                            <td><button><i style="margin-right: 5px;" class="fas fa-plus-circle"></i>Thêm</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="stt">STT</th>
+                                <th>Mã thuốc</th>
+                                <th att="nam">Tên</th>
+                                <th att="ten">Đơn vị tính </th>
+                                <th>Số lượng</th>
+                                <th>Giá bán (VND)</th>
+                                <th>Nhóm thuốc</th>
+                                <th>Xóa</th>
+                                <th>Sửa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>9541</td>
+                                <td>Panadol</td>
+                                <td>Viên</td>
+                                <td>1000</td>
+                                <td>2.000</td>
+                                <td>Kháng sinh</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>9534</td>
+                                <td>Que test đường</td>
+                                <td>Lọ</td>
+                                <td>50</td>
+                                <td>22.000</td>
+                                <td>Vật tư y tế</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>9550</td>
+                                <td>Panadol</td>
+                                <td>Viên</td>
+                                <td>1000</td>
+                                <td>2.000</td>
+                                <td>Kháng sinh</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>9570</td>
+                                <td>Que test đường</td>
+                                <td>Lọ</td>
+                                <td>50</td>
+                                <td>22.000</td>
+                                <td>Vật tư y tế</td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-trash-alt"></i>Xóa</button></td>
+                                <td><button><i style="margin-right: 5px;" class="fas fa-edit"></i>Sửa</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script>
+                document.getElementsByClassName('ipt-kedonthuoc')[0].value = 'A007'
+                var input = document.querySelector('.ipt-kedonthuoc');
+                input.addEventListener('input', resizeInput);
+                resizeInput.call(input);
+
+                function resizeInput() {
+                    this.style.width = this.value.length + 1 + "ch";
+                }
+                function redirect(url) {
+                    var ua = navigator.userAgent.toLowerCase(),
+                        isIE = ua.indexOf('msie') !== -1,
+                        version = parseInt(ua.substr(4, 2), 10);
+
+                    if (isIE && version < 9) {
+                        var link = document.createElement('a');
+                        link.href = url;
+                        document.body.appendChild(link);
+                        link.click();
+                    } else {
+                        window.location.href = url;
+                    }
+                }
+                let __option0 = document.getElementById('option-noti')
+                let __option1 = document.getElementById("xem-don-thuoc")
+                let __option2 = document.getElementById("chi-tiet-don-thuoc")
+                let __option3 = document.getElementById("quan-li-kho-thuoc")
+
+                function option1() {
+                    __option0 ? __option0.style.display = 'none' : '';
+                    __option1 ? __option1.style.display = 'flex' : '';
+                    __option2 ? __option2.style.display = 'none' : '';
+                    __option3 ? __option3.style.display = 'none' : '';
+                }
+
+                function option2() {
+                    __option0 ? __option0.style.display = 'none' : '';
+                    __option1 ? __option1.style.display = 'none' : '';
+                    __option2 ? __option2.style.display = 'flex' : '';
+                    __option3 ? __option3.style.display = 'none' : '';
+                }
+
+                function option3() {
+                    __option0 ? __option0.style.display = 'none' : '';
+                    __option1 ? __option1.style.display = 'none' : '';
+                    __option2 ? __option2.style.display = 'none' : '';
+                    __option3 ? __option3.style.display = 'flex' : '';
+                }
+            </script>
+</body>
+
+</html>

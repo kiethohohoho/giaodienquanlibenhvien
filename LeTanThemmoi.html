@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Bệnh Nhận</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/LeTanThemmoi.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <header>
+            <div class="hd-item"><a href="LeTanTiepNhan.html">Tiếp nhận bệnh nhân mới</a></div>
+        </header>
+        
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Thông tin tiếp nhận</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Họ và tên</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Năm sinh</td>
+                        <td><input type="month"></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Nghề nghiệp</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian tiếp nhận</td>
+                        <td><input spellcheck="false" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Đối tượng</td>
+                        <td>
+                            <select>
+                                <option>Bảo hiểm y tế</option>
+                                <option>Không có bảo hiểm y tế</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số CMND</td>
+                        <td><input spellcheck="false" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Số thẻ BHYT</td>
+                        <td><input spellcheck="false" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Đơn vị</td>
+                        <td><input spellcheck="false" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Có giá trị từ</td>
+                        <td><input spellcheck="false" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Đến</td>
+                        <td><input spellcheck="false" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày hưởng</td>
+                        <td><input spellcheck="false" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Tuyến</td>
+                        <td>
+                            <select>
+                                <option>Nội tuyến</option>
+                                <option>Ngoại tuyến</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Khám</td>
+                        <td>
+                            <select>
+                                <option>Tai</option>
+                                <option>Mũi</option>
+                                <option>Họng</option>
+                                <option>Mắt</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phòng</td>
+                        <td>
+                            <select>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ipt">
+            <!-- <label>Họ tên</label>
+            <input type="text" value="Nguyễn Thị Huệ" spellcheck="false">
+            <label>CMND</label>
+            <input type="text" value="21552848"> -->
+            <button onclick="redirect('LeTanTiepNhan.html')">
+                <i class="fas fa-user-friends"></i>Tiếp nhận bệnh nhân này
+            </button>
+            <button onclick="redirect('LeTanTTBN.html')">
+                <i class="fas fa-sign-out-alt"></i>Trở về
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+
+</html>

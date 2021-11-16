@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Thuốc</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/KhoThuoc.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="./HinhAnh/CancelIcon.png" alt="">
+        </div>
+
+        <header>
+            <h2>kho thuốc</h2>
+        </header>
+
+        <form class="filter">
+            <div class="part1">
+                <label>Search theo</label>
+                <select class="fb-60">
+                    <option hidden>Chọn kiểu search</option>
+                    <option value="theo-ten-dang-nhap">Search theo tên</option>
+                    <option value="theo-ho-va-ten">Search theo họ và tên</option>
+                    <option value="theo-nam-sinh">Search theo năm sinh</option>
+                    <option value="theo-so-dien-thoai">Search theo số điện thoại</option>
+                    <option value="theo-email">Search theo email</option>
+                </select>
+                <input type="text" placeholder="Nhập thông tin muốn search" class="fb-100">
+            </div>
+            <div class="part2">
+                <button class="fb-45">
+                    <img src="./HinhAnh/SortIcon.png" alt="">
+                </button>
+                <button class="fb-45">
+                    <img src="./HinhAnh/LoadingIcon.png" alt="">
+                </button>
+            </div>
+        </form>
+
+        <div class="table-tools">
+            <div class="show-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã Thuốc</th>
+                            <th>Tên Thuốc</th>
+                            <th>Giá Tiền</th>
+                            <th>Số lượng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="list-tools">
+                <button>
+                    <img src="./HinhAnh/AddIcon.png" alt="">
+                </button>
+                <button>
+                    <img src="./HinhAnh/SaveIcon.png" alt="">
+                </button>
+                <button>
+                    <img src="./HinhAnh/PrintIcon.png" alt="">
+                </button>
+                <button>
+                    <img src="./HinhAnh/trash.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+
+</html>

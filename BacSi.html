@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bác Sĩ</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/BacSi.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <div class="filter">
+            <div class="filter-item1">
+                <img src="./HinhAnh/doctor.png" alt="">
+            </div>
+            <div class="filter-item2">
+                <div class="fb-40">
+                    <span>bác sĩ:</span>
+                    <span>lê tấn kiệt</span>
+                </div>
+                <div class="fb-40">
+                    <span>đơn vị:</span>
+                    <span>khoa tâm thần</span>
+                </div>
+                <div class="fb-40">
+                    <span>giới tính:</span>
+                    <span>nam</span>
+                </div>
+                <div class="fb-40">
+                    <span>số điện thoại:</span>
+                    <span>0347057544</span>
+                </div>
+            </div>
+        </div>
+        <div class="list-options">
+            <div class="option" onclick="option1()">bệnh nhân chờ khám</div>
+            <div class="option" onclick="option2()">khám dựa theo tình trạng bệnh</div>
+            <div class="option" onclick="option4()">chẩn đoán sau khi kiểm tra lâm sàn</div>
+        </div>
+        <div class="show-info">
+            <h3 id="option-noti">
+                chọn 1 tác vụ để làm việc
+            </h3>
+
+            <div id="ho-so-benh-an" class="flex-display" style="display: none;">
+                <h1>Bệnh Nhân Chờ Khám</h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="stt">Số tiếp nhận</th>
+                                <th att="ngay">Mã y tế</th>
+                                <th att="ten">Họ và tên</th>
+                                <th att="ngay">CMND</th>
+                                <th att="ten">Tình trạng bệnh nhân</th>
+                                <th>Ghi Chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>70131104011031</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>Đau đầu</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>70131104011032</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>70131104011033</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>70131104011034</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>70131104011035</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>70131104011036</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>70131104011037</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>70131104011038</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>70131104011039</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>70131104011040</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>70131104011041</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>70131104011042</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>70131104011043</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>70131104011044</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>70131104011045</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="ke-don-thuoc" class="flex-display" style="display: none;">
+                <h1></h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="ngay">Mã y tế</th>
+                                <th att="ngay">Họ tên</th>
+                                <th att="ngay">CMND</th>
+                                <th>Ghi Chú</th>
+                                <th>Khám Lâm Sàng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>70131104011031</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>Đau đầu</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011032</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011033</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011034</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011035</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011036</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011037</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011038</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011039</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011040</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011041</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011042</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011043</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011044</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011045</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="lich-hen-kham" class="flex-display" style="display: none;">
+                <h1>Chuẩn đoán sau khi khám lâm sàng</h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="ngay">Mã y tế</th>
+                                <th att="ngay">Họ tên</th>
+                                <th att="ngay">CMND</th>
+                                <th>Ghi Chú</th>
+                                <th>Chẩn Đoán</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>70131104011031</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>Đau đầu</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011032</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011033</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011034</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011035</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011036</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011037</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011038</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011039</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011040</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011041</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011042</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011043</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011044</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>70131104011045</td>
+                                <td>Nguyễn Thị Huệ</td>
+                                <td>215528481</td>
+                                <td><p>...</p></td>
+                                <td><textarea cols="4" rows="2">...</textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // document.getElementsByClassName('ipt-kedonthuoc')[0].value = 'Lê Tấn Kiệt'
+        // var input = document.querySelector('.ipt-kedonthuoc');
+        // input.addEventListener('input', resizeInput);
+        // resizeInput.call(input);
+
+        function resizeInput() {
+            this.style.width = this.value.length + 1 + "ch";
+        }
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+        let __option0 = document.getElementById('option-noti')
+        let __option1 = document.getElementById("ho-so-benh-an")
+        let __option2 = document.getElementById("ke-don-thuoc")
+        let __option4 = document.getElementById("lich-hen-kham")
+        function option1() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'flex' : '';
+            __option2 ? __option2.style.display = 'none' : '';
+            __option4 ? __option4.style.display = 'none' : '';
+        }
+        function option2() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'none' : '';
+            __option2 ? __option2.style.display = 'flex' : '';
+            __option4 ? __option4.style.display = 'none' : '';
+        }
+        function option4() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'none' : '';
+            __option2 ? __option2.style.display = 'none' : '';
+            __option4 ? __option4.style.display = 'flex' : '';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.box {
+  width: 550px;
+  height: 100%;
+  background-image: url(../HinhAnh/61802.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+  padding: 20px;
+}
+.item {
+  background-color: #c2ffd9;
+  flex-basis: 35%;
+  background-position: center center;
+  padding: 7px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 50%;
+}
+.item > a > p {
+  text-transform: capitalize;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.item:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+.item1 {
+  background-image: url(../HinhAnh/Clinic.png);
+}
+.item2 {
+  background-image: url(../HinhAnh/drug.png);
+}
+.item3 {
+  background-image: url(../HinhAnh/Finance.png);
+}
+.item4 {
+  background-image: url(../HinhAnh/UserIcon.png);
+}
+.item5 {
+  background-image: url(../HinhAnh/doctor.png);
+}
+.item6 {
+  background-image: url(../HinhAnh/1.jpg);
+}
+.item7 {
+  background-image: url(../HinhAnh/duocsi.png);
+}
+.item8 {
+  background-image: url(../HinhAnh/observation.png);
+}
+/* .item6 a {
+  color: white;
+} */

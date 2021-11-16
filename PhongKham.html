@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Khám</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/PhongKham.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="./HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <header>
+            <h2>quản lý phòng khám</h2>
+        </header>
+        <div class="content">
+            <form action="" method="post">
+                <h3 class="form-title">
+                    nhập thông tin
+                </h3>
+                <div class="info">
+                    <label for="ten-bac-si">tên bác sĩ </label>
+                    <input type="text" name="ten-bac-si" required>
+                </div>
+                <div class="info">
+                    <label for="ten-benh-nhan">tên bệnh nhân </label>
+                    <input type="text" name="ten-benh-nhan" required>
+                </div>
+                <div class="info">
+                    <label for="nam-sinh">năm sinh </label>
+                    <input type="date" name="nam-sinh" required>
+                </div>
+                <div class="info">
+                    <label for="dia-chi">địa chỉ </label>
+                    <input type="text" name="dia-chi" required>
+                </div>
+                <div class="info">
+                    <label for="so-dien-thoai">điện thoại </label>
+                    <input type="text" name="so-dien-thoai" required>
+                </div>
+                <div class="info">
+                    <label for="ngay-kham">ngày khám </label>
+                    <input type="date" name="ngay-kham" required>
+                </div>
+                <div class="info">
+                    <label for="chan-doan">chẩn đoán </label>
+                    <input type="text" name="chan-doan" required>
+                </div>
+                <div class="info">
+                    <label for="lich-hen-ham">lịch hẹn khám </label>
+                    <input type="date" name="lich-hen-ham" required>
+                </div>
+                <div class="info">
+                    <label class="small-height" for="toa-thuoc">toa thuốc </label>
+                    <textarea name="toa-thuoc" rows="4" cols="50" required></textarea>
+                </div>
+                <input class="submit-btn" type="submit" value="NHẬP LIỆU">
+            </form>
+
+            <div class="show-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ngày Khám</th>
+                            <th>Họ Tên</th>
+                            <th>Năm Sinh</th>
+                            <th>Địa Chỉ</th>
+                            <th>Số điện thoại</th>
+                            <th>Chẩn Đoán</th>
+                            <th>Toa Thuốc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>1/1/2001</td>
+                            <td>Le Tan Kiet</td>
+                            <td>10/02/2001</td>
+                            <td>Binh Dinh</td>
+                            <td>0347057544</td>
+                            <td>ok</td>
+                            <td>1/1/2001</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+        </div>
+    </div>
+    <script>
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+
+</html>

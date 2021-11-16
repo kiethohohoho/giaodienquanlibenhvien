@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bệnh Nhân</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/BenhNhan.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <div class="filter">
+            <div class="filter-item1">
+                <img src="./HinhAnh/observation.png" alt="">
+            </div>
+            <div class="filter-item2">
+                <div class="fb-40">
+                    <span>bệnh nhân:</span>
+                    <span>ngọc anh</span>
+                </div>
+                <div class="fb-40">
+                    <span>ngày sinh:</span>
+                    <span>27-09-2001</span>
+                </div>
+                <div class="fb-40">
+                    <span>giới tính:</span>
+                    <span>nữ</span>
+                </div>
+                <div class="fb-40">
+                    <span>số điện thoại:</span>
+                    <span>0123456789</span>
+                </div>
+            </div>
+        </div>
+        <div class="list-options">
+            <div class="option" onclick="option1()">thông tin bệnh nhân</div>
+            <div class="option" onclick="option2()">hồ sơ sức khỏe</div>
+            <div class="option" onclick="option4()">nhắc nhở</div>
+        </div>
+        <div class="show-info">
+            <h3 id="option-noti">
+                chọn 1 tác vụ để làm việc
+            </h3>
+
+            <div id="ho-so-benh-an" class="flex-display" style="display: none;">
+                <h1>Thông tin bệnh nhân</h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="ten">Họ và tên</th>
+                                <th att="ten">Số CMND / CCCD</th>
+                                <th att="ten">Số thẻ BHYT</th>
+                                <th att="ngay">Ngày sinh</th>
+                                <th att="stt">Giới tính</th>
+                                <th att="ngay">Dân tộc</th>
+                                <th att="ngay">Tôn giáo</th>
+                                <th att="ngay">SĐT</th>
+                                <th att="ten">Địa chỉ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ngọc Anh</td>
+                                <td>21456942</td>
+                                <td>BH 64165</td>
+                                <td>27-09-2001</td>
+                                <td>Nữ</td>
+                                <td>Kinh</td>
+                                <td>Không</td>
+                                <td>012325841962</td>
+                                <td>Bình Phước</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="ke-don-thuoc" class="flex-display" style="display: none;">
+                <h1>Lịch sử khám bệnh</h1>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th att="stt">STT</th>
+                                <th att="ngay">Ngày khám</th>
+                                <th att="ten">Bệnh án</th>
+                                <th att="ten">Bác sĩ</th>
+                                <th att="ten">Ngày xuất viện</th>
+                                <th att="ten">Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="lich-hen-kham" class="flex-display" style="display: none;">
+                <h1>Nhắc nhở</h1>
+                <div class="table-scroll flex-center">
+                    <textarea style="font-size: 25px;" readonly spellcheck="false" cols="30" rows="10">Uống thuốc đầy đủ, đúng liều và chú ý ăn uống nhiều rau, ngủ nghỉ đầy đủ</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // document.getElementsByClassName('ipt-kedonthuoc')[0].value = 'Lê Tấn Kiệt'
+        // var input = document.querySelector('.ipt-kedonthuoc');
+        // input.addEventListener('input', resizeInput);
+        // resizeInput.call(input);
+
+        function resizeInput() {
+            this.style.width = this.value.length + 1 + "ch";
+        }
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+        let __option0 = document.getElementById('option-noti')
+        let __option1 = document.getElementById("ho-so-benh-an")
+        let __option2 = document.getElementById("ke-don-thuoc")
+        let __option4 = document.getElementById("lich-hen-kham")
+        function option1() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'flex' : '';
+            __option2 ? __option2.style.display = 'none' : '';
+            __option4 ? __option4.style.display = 'none' : '';
+        }
+        function option2() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'none' : '';
+            __option2 ? __option2.style.display = 'flex' : '';
+            __option4 ? __option4.style.display = 'none' : '';
+        }
+        function option4() {
+            __option0 ? __option0.style.display = 'none' : '';
+            __option1 ? __option1.style.display = 'none' : '';
+            __option2 ? __option2.style.display = 'none' : '';
+            __option4 ? __option4.style.display = 'flex' : '';
+        }
+    </script>
+</body>
+
+</html>

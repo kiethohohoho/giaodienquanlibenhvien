@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Bệnh Nhận</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/LeTanTTBN.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="dong" onclick="redirect('/')">
+            <img src="HinhAnh/CancelIcon.png" alt="">
+        </div>
+        <header>
+            <div class="hd-item"><a href="LeTanTiepNhan.html">Tiếp nhận</a></div>
+            <div class="hd-item"><a href="LeTanTTBN.html">Thông tin bệnh nhân</a></div>
+            <div class="hd-item"><a href="LeTanBCDT.html">Báo cáo doanh thu</a></div>
+        </header>
+        <div class="ipt">
+            <label>Họ tên</label>
+            <input type="text" value="Nguyễn Thị Huệ" spellcheck="false">
+            <label>CMND</label>
+            <input type="text" value="21552848">
+        </div>
+        <div class="ipt">
+            <button>
+                <i class="fas fa-search"></i>TÌM
+            </button>
+            <button onclick="redirect('/')">
+                <i class="fas fa-sign-out-alt"></i>THOÁT
+            </button>
+            <button onclick="redirect('LeTanThemmoi.html')">
+                <i class="fas fa-user-plus"></i>Thêm bệnh nhân mới
+            </button>
+        </div>
+        <h3>Tìm thấy 15 bệnh nhân</h3>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th att="ten">Mã y tế</th>
+                        <th att="ten">Họ tên</th>
+                        <th att="ten">CMND</th>
+                        <th att="stt">Giới tính</th>
+                        <th att="stt">Năm sinh</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011031</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1951</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011032</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1952</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011033</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1953</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011034</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1954</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011035</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1955</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011036</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1956</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011037</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1957</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011038</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1958</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011039</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1959</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011040</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1960</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011041</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1961</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011042</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1962</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011043</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1963</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011044</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1964</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="LeTanThemmoi.html">70131104011045</a></td>
+                        <td>Nguyễn Thị Huệ</td>
+                        <td>215528481</td>
+                        <td>Nữ</td>
+                        <td>1965</td>
+                        <td>38 Lê Lợi, Tp.Qui Nhơn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="ipt">
+
+            <!-- <button onclick="redirect('LeTanTiepNhan.html')">
+                <i class="fas fa-user-friends"></i>Tiếp nhận bệnh nhân này
+            </button> -->
+        </footer>
+    </div>
+
+    <script>
+        function redirect(url) {
+            var ua = navigator.userAgent.toLowerCase(),
+                isIE = ua.indexOf('msie') !== -1,
+                version = parseInt(ua.substr(4, 2), 10);
+
+            if (isIE && version < 9) {
+                var link = document.createElement('a');
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+
+</html>

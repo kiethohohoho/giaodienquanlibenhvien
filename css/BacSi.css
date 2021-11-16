@@ -1,0 +1,202 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.box {
+  width: 75%;
+  height: 100%;
+  background-image: url(../HinhAnh/61802.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+.dong {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+  z-index: 10;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  position: relative;
+  justify-content: center;
+  height: 100px;
+}
+.filter-item1 {
+  position: absolute;
+  left: 20px;
+  height: 100%;
+}
+.filter-item2 {
+  flex-basis: 70%;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: #075552;
+}
+.filter-item2 span {
+  text-transform: capitalize;
+  font-size: 17px;
+  padding: 2px;
+}
+.fb-40 {
+  flex-basis: 40%;
+}
+.filter-item2 span:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.list-options {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 50px;
+}
+.option {
+  padding: 15px;
+  text-align: center;
+  background-color: #14b1ab;
+  color: #eee;
+  font-weight: 600;
+  flex-basis: calc(100% / 5);
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 50px;
+}
+.show-info {
+  height: calc(100% - 190px);
+}
+.flex-display {
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+.table-scroll {
+  overflow-y: scroll;
+  position: relative;
+}
+#option-noti {
+  text-transform: uppercase;
+  color: red;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-info th {
+  position: sticky;
+  top: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background: #eee;
+}
+th[att="stt"] {
+  width: 90px;
+}
+th[att="nam"] {
+  width: 100px;
+}
+th[att="ngay"] {
+  width: 150px;
+}
+th[att="ten"] {
+  width: 220px;
+}
+td,
+th {
+  border: 1px solid white;
+  text-align: center;
+  padding: 8.5px;
+  text-align: center;
+}
+td textarea {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 100%;
+  white-space: pre-line;
+}
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+.filter {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.part1 {
+  flex-basis: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100px;
+}
+.part2 {
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100px;
+}
+.fb-45 {
+  flex-basis: 40%;
+}
+.fb-60 {
+  flex-basis: 60%;
+}
+.fb-100 {
+  /* margin-top: 20px; */
+  flex-basis: 100%;
+  /* background-color: #075552; */
+}
+.ipt-kedonthuoc {
+  min-width: 12ch;
+  font-size: 20px;
+}
+label {
+  background-color: #f6f6f6;
+  text-transform: capitalize;
+  color: #14b1ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 7px;
+}
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 10px;
+  display: inline-block;
+  color: #14b1ab;
+  text-align: left;
+}
